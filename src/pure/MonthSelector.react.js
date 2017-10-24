@@ -3,7 +3,8 @@
 * @flow
 */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'PropTypes'
 import {
   LayoutAnimation,
   TouchableHighlight,
@@ -19,7 +20,7 @@ import Moment from 'moment';
 type Props = {
   selected?: Moment,
   // Styling
-  style?: View.propTypes.style,
+  style?: PropTypes.style,
   // Controls the focus of the calendar.
   focus: Moment,
   onFocus?: (date: Moment) => void,
@@ -27,9 +28,9 @@ type Props = {
   minDate: Moment,
   maxDate: Moment,
   // Styling properties.
-  monthText?: Text.propTypes.style,
-  monthDisabledText?: Text.propTypes.style,
-  selectedText?: Text.propTypes.style,
+  monthText?: PropTypes.style,
+  monthDisabledText?: PropTypes.style,
+  selectedText?: PropTypes.style,
 };
 type State = {
   months: Array<Array<Object>>,
