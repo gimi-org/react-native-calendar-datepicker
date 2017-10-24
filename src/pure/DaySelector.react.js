@@ -3,7 +3,8 @@
 * @flow
 */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'propTypes'
 import {
   Dimensions,
   PanResponder,
@@ -30,15 +31,15 @@ type Props = {
   minDate: Moment,
   maxDate: Moment,
   // Styling properties.
-  dayHeaderView?: View.propTypes.style,
-  dayHeaderText?: Text.propTypes.style,
-  dayRowView?: View.propTypes.style,
-  dayView?: View.propTypes.style,
-  daySelectedView?: View.propTypes.style,
-  dayText?: Text.propTypes.style,
-  dayTodayText?: Text.propTypes.style,
-  daySelectedText?: Text.propTypes.style,
-  dayDisabledText?: Text.propTypes.style,
+  dayHeaderView?: PropTypes.style,
+  dayHeaderText?: PropTypes.style,
+  dayRowView?: PropTypes.style,
+  dayView?: PropTypes.style,
+  daySelectedView?: PropTypes.style,
+  dayText?: PropTypes.style,
+  dayTodayText?: PropTypes.style,
+  daySelectedText?: PropTypes.style,
+  dayDisabledText?: PropTypes.style,
 };
 type State = {
   days: Array<Array<Object>>,
