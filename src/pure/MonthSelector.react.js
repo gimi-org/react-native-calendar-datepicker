@@ -4,7 +4,7 @@
 */
 
 import React, { Component } from 'react';
-import PropTypes from 'PropTypes'
+import PropTypes from 'prop-types'
 import {
   LayoutAnimation,
   TouchableHighlight,
