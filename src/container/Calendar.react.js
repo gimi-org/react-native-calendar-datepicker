@@ -6,6 +6,7 @@
 console.ignoredYellowBox = ['Warning: Overriding '];
 
 import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
 import {
   LayoutAnimation,
   Slider,
@@ -47,30 +48,30 @@ type Props = {
   // not be able to select the month.
   finalStage: Stage,
   // General styling properties.
-  style?: View.propTypes.style,
-  barView?: View.propTypes.style,
-  barText?: Text.propTypes.style,
-  stageView?: View.propTypes.style,
+  style?: PropTypes.style,
+  barView?: PropTypes.style,
+  barText?: PropTypes.style,
+  stageView?: PropTypes.style,
   showArrows: boolean,
   // Styling properties for selecting the day.
-  dayHeaderView?: View.propTypes.style,
-  dayHeaderText?: Text.propTypes.style,
-  dayRowView?: View.propTypes.style,
-  dayView?: View.propTypes.style,
-  daySelectedView?: View.propTypes.style,
-  dayText?: Text.propTypes.style,
-  dayTodayText?: Text.propTypes.style,
-  daySelectedText?: Text.propTypes.style,
-  dayDisabledText?: Text.propTypes.style,
+  dayHeaderView?: PropTypes.style,
+  dayHeaderText?: PropTypes.style,
+  dayRowView?: PropTypes.style,
+  dayView?: PropTypes.style,
+  daySelectedView?: PropTypes.style,
+  dayText?: PropTypes.style,
+  dayTodayText?: PropTypes.style,
+  daySelectedText?: PropTypes.style,
+  dayDisabledText?: PropTypes.style,
   // Styling properties for selecting the month.
-  monthText?: Text.propTypes.style,
-  monthDisabledText?: Text.propTypes.style,
-  monthSelectedText?: Text.propTypes.style,
+  monthText?: PropTypes.style,
+  monthDisabledText?: PropTypes.style,
+  monthSelectedText?: PropTypes.style,
   // Styling properties for selecting the year.
   yearMinTintColor?: string,
   yearMaxTintColor?: string,
-  yearSlider?: Slider.propTypes.style,
-  yearText?: Text.propTypes.style,
+  yearSlider?: PropTypes.style,
+  yearText?: PropTypes.style,
 };
 type State = {
   stage: Stage,
