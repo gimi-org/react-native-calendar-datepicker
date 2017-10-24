@@ -3,7 +3,8 @@
 * @flow
 */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import {
   Slider,
   View,
@@ -16,7 +17,7 @@ import _ from 'lodash';
 import Moment from 'moment';
 
 type Props = {
-  style?: View.propTypes.style,
+  style?: PropTypes.style,
   // Focus and onFocus for managing the calendar.
   focus: Moment,
   onFocus?: (date : Moment) => void,
@@ -26,8 +27,8 @@ type Props = {
   // Styling properties.
   minimumTrackTintColor?: string,
   maximumTrackTintColor?: string,
-  yearSlider?: Slider.propTypes.style,
-  yearText?: Text.propTypes.style,
+  yearSlider?: PropTypes.style,
+  yearText?: PropTypes.style,
 };
 type State = {
   year: Number,
