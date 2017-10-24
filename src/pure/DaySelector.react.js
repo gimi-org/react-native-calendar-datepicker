@@ -4,7 +4,7 @@
 */
 
 import React, { Component } from 'react';
-import PropTypes from 'propTypes'
+import PropTypes from 'prop-types'
 import {
   Dimensions,
   PanResponder,
